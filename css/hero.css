@@ -1,0 +1,146 @@
+/* Hero/Banner Section Styles */
+.banner-section {
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 98vh;
+    padding-top: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    border: none;
+}
+
+.banner-content-wrapper {
+    position: relative;
+    z-index: 5;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+}
+
+.banner__title {
+    color: var(--text-primary);
+    font-size: 84px;
+    line-height: 1.1;
+    margin: 0;
+}
+
+.banner__info {
+    color: var(--text-primary);
+    font-size: 20px;
+    margin: 16px 0;
+}
+
+.banner__overview {
+    color: var(--text-primary);
+    max-width: 500px;
+    line-height: 1.5;
+    font-size: 18px;
+    margin: 12px 0;
+}
+
+.action-buttons-cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.action-button {
+    font-size: 20px;
+    color: var(--text-primary);
+    background-color: rgba(109, 109, 110, 0.7);
+    border: none;
+    padding: 8px 23px;
+    margin-right: 11px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.action-button:hover {
+    background-color: #b3b3b3;
+    color: black;
+    transition: all ease 300ms;
+}
+
+.banner-play-btn {
+    background-color: rgba(255, 255, 255, .9);
+    color: black;
+}
+
+.banner-play-btn:hover {
+    background-color: rgba(255, 255, 255, .75);
+}
+
+.banner-section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 9.5rem;
+    background-image: linear-gradient(
+        180deg,
+        transparent,
+        rgba(37, 37, 37, .61),
+        var(--primary-bg)
+    );
+    z-index: 2;
+}
+
+/* Hero Video Mute Control */
+#hero-mute-notice {
+    position: absolute !important;
+    bottom: 80px;
+    right: 20px;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 0;
+    border-radius: 50%;
+    font-size: 20px;
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    transition: background-color 0.3s ease;
+    pointer-events: auto;
+    margin: 0 !important;
+}
+
+#hero-mute-notice:hover {
+    background: rgba(0,0,0,0.9);
+}
+
+@media (max-width: 768px) {
+    .banner__title {
+        font-size: 48px;
+    }
+    .banner__info {
+        font-size: 16px;
+    }
+    .banner__overview {
+        font-size: 14px;
+        max-width: 100%;
+    }
+    .action-button {
+        font-size: 16px;
+        padding: 6px 16px;
+    }
+}

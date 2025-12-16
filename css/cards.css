@@ -1,0 +1,141 @@
+/* Movie Cards and Sections */
+.movies-section {
+    margin: 41px 0;
+}
+
+.movie-section-heading {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--text-primary);
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.explore-nudge {
+    color: var(--accent-color);
+    font-size: 12px;
+    display: none;
+}
+
+.movie-section-heading:hover .explore-nudge {
+    display: inline-block;
+}
+
+.movies-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+
+.movie-item {
+    width: 245px;
+    object-fit: contain;
+    margin-right: 6px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.slider-nav {
+    display: flex;
+    gap: 8px;
+}
+
+.slider-btn {
+    background: rgba(255, 255, 255, 0.12);
+    color: var(--text-primary);
+    border: none;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 150ms ease, transform 150ms ease;
+}
+
+.slider-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+.poster-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.move-item-img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.movie-item:hover {
+    transform: scale(var(--hover-scale));
+    transition: transform linear var(--transition-speed);
+    cursor: pointer;
+}
+
+/* Slider animation states */
+.movies-row.slide-next {
+    animation: slideNext 320ms cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.movies-row.slide-prev {
+    animation: slidePrev 320ms cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+@keyframes slideNext {
+    from { transform: translateX(18px); opacity: 0.7; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slidePrev {
+    from { transform: translateX(-18px); opacity: 0.7; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+/* Title overlay on hover */
+.movie-title-overlay {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 12px;
+    background: var(--overlay-darker);
+    color: var(--text-primary);
+    font-size: 16px;
+    font-weight: 600;
+    display: none;
+    z-index: 20;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+    pointer-events: none;
+}
+
+.movie-item:hover .movie-title-overlay {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .movie-item {
+        width: 180px;
+    }
+}

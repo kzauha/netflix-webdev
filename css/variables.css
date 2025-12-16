@@ -1,0 +1,12 @@
+/* CSS Variables */
+:root {
+    --primary-bg: #141414;
+    --secondary-bg: rgb(20, 20, 20);
+    --text-primary: #fff;
+    --text-secondary: #e5e5e5;
+    --accent-color: #54b9c5;
+    --overlay-dark: rgba(0, 0, 0, 0.7);
+    --overlay-darker: rgba(0, 0, 0, 0.78);
+    --hover-scale: 1.1;
+    --transition-speed: 300ms;
+}

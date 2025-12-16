@@ -1,0 +1,335 @@
+/* Responsive Styles */
+
+/* Tablet and below */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 95%;
+    }
+    
+    .banner__title {
+        font-size: 64px;
+        max-width: 60%;
+    }
+    
+    .banner__overview {
+        max-width: 60%;
+    }
+    
+    .movie-item {
+        width: 200px;
+    }
+}
+
+/* Small tablets and large phones */
+@media (max-width: 768px) {
+    /* Header */
+    .header-cont {
+        padding: 10px 20px;
+    }
+    
+    .header-brand {
+        max-width: 80px;
+    }
+    
+    .main-nav {
+        display: none;
+    }
+    
+    .right-cont svg {
+        width: 20px;
+        height: 20px;
+        margin-right: 16px;
+    }
+    
+    .right-cont img {
+        max-width: 32px;
+    }
+    
+    /* Hero Banner */
+    .banner-section {
+        min-height: 70vh;
+        padding-top: 60px;
+    }
+    
+    .banner__title {
+        font-size: 48px;
+        max-width: 80%;
+        margin-bottom: 12px;
+    }
+    
+    .banner__info {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .banner__overview {
+        font-size: 14px;
+        max-width: 80%;
+        line-height: 1.4;
+    }
+    
+    .action-buttons-cont {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    
+    .action-button {
+        padding: 8px 20px;
+        font-size: 15px;
+    }
+    
+    /* Movie Sections */
+    .movie-section-heading {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+    
+    .movie-item {
+        width: 180px;
+        margin-right: 8px;
+    }
+    
+    .movies-section {
+        margin: 30px 0;
+    }
+    
+    /* Modal */
+    .modal-content {
+        width: 95%;
+        max-height: 85vh;
+        padding: 20px;
+    }
+    
+    .modal-movie-title {
+        font-size: 26px;
+    }
+    
+    .movie-metadata {
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+    }
+    
+    .modal-movie-overview {
+        font-size: 14px;
+        max-height: 180px;
+    }
+    
+    .cast-list {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    
+    .footer-section h4 {
+        font-size: 16px;
+    }
+    
+    .social-links {
+        display: flex;
+        gap: 16px;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    /* Header */
+    .header-cont {
+        padding: 8px 15px;
+    }
+    
+    .header-brand {
+        max-width: 70px;
+    }
+    
+    .right-cont svg {
+        width: 18px;
+        height: 18px;
+        margin-right: 12px;
+    }
+    
+    .right-cont img {
+        max-width: 28px;
+    }
+    
+    /* Hero Banner */
+    .banner-section {
+        min-height: 60vh;
+        padding-top: 50px;
+    }
+    
+    .banner-content {
+        padding-top: 40px;
+    }
+    
+    .banner__title {
+        font-size: 32px;
+        max-width: 90%;
+        margin-bottom: 10px;
+    }
+    
+    .banner__info {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    
+    .banner__overview {
+        font-size: 13px;
+        max-width: 90%;
+    }
+    
+    .action-buttons-cont {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .action-button {
+        padding: 8px 18px;
+        font-size: 14px;
+        width: fit-content;
+    }
+    
+    /* Movie Sections */
+    .movie-section-heading {
+        font-size: 16px;
+    }
+    
+    .movie-item {
+        width: 150px;
+        margin-right: 6px;
+    }
+    
+    .movies-section {
+        margin: 24px 0;
+    }
+    
+    /* Slider Navigation */
+    .slider-btn {
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+    }
+    
+    /* Modal */
+    .modal-content {
+        width: 100%;
+        max-height: 90vh;
+        padding: 16px;
+        border-radius: 0;
+    }
+    
+    .modal-close {
+        width: 32px;
+        height: 32px;
+        font-size: 24px;
+        top: 10px;
+        right: 10px;
+    }
+    
+    .modal-movie-title {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+    
+    .movie-metadata {
+        font-size: 12px;
+        gap: 6px;
+    }
+    
+    .movie-rating,
+    .movie-genre,
+    .movie-year {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+    
+    .modal-movie-overview {
+        font-size: 13px;
+        line-height: 1.6;
+        max-height: 150px;
+        margin-bottom: 20px;
+    }
+    
+    .cast-section {
+        margin-top: 20px;
+        padding-top: 16px;
+    }
+    
+    .cast-section h3 {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    
+    .cast-member {
+        padding: 10px;
+        font-size: 13px;
+    }
+    
+    .video-player-container {
+        aspect-ratio: 16 / 9;
+    }
+    
+    .modal-trailer-iframe {
+        height: auto;
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    .footer-section h4 {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+    
+    .footer-section ul {
+        font-size: 13px;
+    }
+    
+    .footer-section li {
+        margin-bottom: 8px;
+    }
+    
+    .social-links {
+        gap: 12px;
+    }
+    
+    .social-link svg {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .footer-bottom {
+        margin-top: 24px;
+        padding-top: 16px;
+    }
+    
+    .footer-bottom p {
+        font-size: 12px;
+    }
+}
+
+/* Extra small phones */
+@media (max-width: 360px) {
+    .banner__title {
+        font-size: 28px;
+    }
+    
+    .movie-item {
+        width: 130px;
+    }
+    
+    .modal-content {
+        padding: 12px;
+    }
+    
+    .modal-movie-title {
+        font-size: 20px;
+    }
+}

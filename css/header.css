@@ -1,0 +1,61 @@
+/* Header Styles */
+header {
+    background-color: var(--secondary-bg);
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    transition: all ease 600ms;
+}
+
+header.black-bg {
+    background-color: var(--secondary-bg);
+}
+
+.header-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left-cont, .right-cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-brand {
+    max-width: 110px;
+}
+
+.main-nav {
+    list-style: none;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.nav-item {
+    margin-right: 20px;
+    color: var(--text-secondary);
+    opacity: .83;
+}
+
+.nav-item.active {
+    color: var(--text-primary);
+    opacity: 1;
+    font-weight: 500;
+}
+
+.right-cont svg, .right-cont img {
+    margin-right: 22px;
+    cursor: pointer;
+}
+
+.right-cont svg {
+    color: var(--text-primary);
+}
+
+.right-cont img {
+    max-width: 40px;
+}
